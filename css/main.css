@@ -5,6 +5,9 @@ a {
     color: black;
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
 /* header */
 .header{
     background: #cccccc;
@@ -48,34 +51,53 @@ a {
 .list-content a {
     text-transform: uppercase;
 }
-.media3{
-    background: url(../assets/youtube.png);
-    width: 50px;
-    height: 50px;
+.lista >a{
+    display: block;
+    text-indent: -999999px;  /*esconde o texto do h1*/
+    width: 190px;
+    height: 85px;
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
-    text-indent: -999999px;
-   
-}
-.media1{
-    background: url(../assets/facebook.png);
-    width: 50px;
-    height: 50px;
+    
+} 
+.media1>a{
+    display: block;
+    text-indent: -999999px;  
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
-    text-indent: -999999px;
-}
-.media2{
     background: url(../assets/twitter.png);
-    width: 50px;
+    width:  45px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+.media2>a{
+    display: block;
+    text-indent: -999999px;  
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/facebook.png);
+    width:  45px;
     height: 50px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    text-indent: -999999px;
-}
+    } 
+.media3>a{
+    display: block;
+    text-indent: -999999px;    
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/youtube.png);
+    width:  45px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+} 
+
 .btn-mobile{
     display: none;
     height: 50px;
@@ -97,6 +119,13 @@ a {
 }
 /* media queries */
 @media screen and (max-width: 768px) {
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        margin: 0 5px;
+    }
     .header{
         position: relative;
     }
@@ -107,7 +136,7 @@ a {
         left: 0;
         flex-direction: column;
         align-items: center;
-        background: #eae8e8;
+        background: #eae8e8; 
     }
 
     .nav-primary .list-content li + li{
@@ -121,15 +150,13 @@ a {
     }
 
     .nav-primary.is-visible{ /*classe que aparece a nav no mobile*/
-        display: flex;
+        display: block;
+        width: 100%;
+        background: aliceblue;
         position: absolute;
         top: 85px;
         left: 0;
-        flex-direction: column;
-        align-items: center;
-        background: #eae8e8;
     }
-
     .btn-mobile{
         display: block;
     }

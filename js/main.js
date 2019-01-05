@@ -4,7 +4,7 @@
     // verificar se a navegação possuir a classe is-visible no click, retirá-la, caso contrário vai acrescentar
 
     const button = document.querySelector(".btn-mobile")
-const menuMobile = document.querySelector(".nav-primary");
+    const menuMobile = document.querySelector(".nav-primary");
 
 
 button.addEventListener( 'click', function(e){
