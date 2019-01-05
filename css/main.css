@@ -137,6 +137,20 @@ li{
         flex-direction: column;
         align-items: center;
         background: #eae8e8; 
+    } 
+    .nav-primary.is-visible{ /*classe que aparece a nav no mobile*/
+        display:flex;
+        /* width: 100%;
+        background: aliceblue;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background: #eae8e8; */
     }
 
     .nav-primary .list-content li + li{
@@ -149,14 +163,7 @@ li{
         align-items: center;
     }
 
-    .nav-primary.is-visible{ /*classe que aparece a nav no mobile*/
-        display: block;
-        width: 100%;
-        background: aliceblue;
-        position: absolute;
-        top: 85px;
-        left: 0;
-    }
+   
     .btn-mobile{
         display: block;
     }
